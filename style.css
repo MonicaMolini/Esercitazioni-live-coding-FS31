@@ -147,8 +147,85 @@ header{
 }
 .servizi-bottom{
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: 1fr;
+    grid-template-columns: repeat(3, calc(30% - 5%));
+    grid-template-rows: auto;
     width: 100%;
-    grid-gap: 15%;
+    grid-gap: 5%;
+    justify-content: space-around;
+}
+.servizi {
+    display: flex;
+    flex-direction: column;
+    gap: 100px;
+}
+.story {
+   display: flex;
+   justify-content: space-between; 
+   width: 100%;
+}
+.story-left{
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+    gap: 20px;
+    align-items: start;
+    justify-content: center;
+}
+
+.story-right {
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    grid-template-rows: repeat(2, auto);
+    gap: 20px;  
+}
+.story-right div {
+    background-color: #898989;
+    border-radius: 10px;
+    overflow: hidden;
+}
+.story-right img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.carosello {
+    display: flex;
+    width: 100%;
+}
+.carosello-left {
+    display: flex;
+    flex-direction: column;
+    max-width: 50%;
+
+}
+.carosello-left > div:nth-child(1) {
+    background-color: #898989;
+    border-radius: 10px;
+    overflow: hidden;
+}
+.carosello-left img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.navigator {
+    display: flex;
+    justify-content: flex-end;
+    gap: 2%;
+}
+.carosello-right {
+    display: flex;
+    flex-direction: column;
+    max-width: 50%;
+}
+
+.carosello-right-card {
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(255, 255, 255);
+    box-shadow: -2px -3px 15px 5px rgba(0,0,0,0.16);
+    border-radius: 10px;
+    padding: 20px;
+    margin-left: -50px;
+    max-width: 50%;
 }
